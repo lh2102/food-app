@@ -25,7 +25,7 @@ const FoodDetails = (props) => {
 
     const handleClickImg = (data) => {
         setPreviewImg(data);
-        window.scrollTo(0, 160);
+        window.scrollTo(0, 130);
     };
     const addItemFood = () => {
         dispatch(
