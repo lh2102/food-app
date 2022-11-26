@@ -49,7 +49,7 @@ const Header = () => {
                         <p>Food App</p>
                     </Link>
                     <div className="navigation" ref={menuShow} onClick={handleMenu}>
-                        <div className="menu d-flex align-items-center gap-4">
+                        <div className="menu d-flex align-items-center gap-4" onClick={handleMenu}>
                             {nav__Links.map((item, i) => (
                                 <NavLink
                                     key={i}

@@ -17,7 +17,6 @@
     align-items: center;
     justify-content: center;
     position: fixed;
-    width: 380px;
     top: 0;
     right: 0;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
@@ -50,6 +49,11 @@
     overflow: scroll;
     overflow: -moz-scrollbars-none;
     -ms-overflow-style: none;
+}
+@media only screen and (max-width: 576px) {
+    .cart__wrapper_div {
+        width: 100%;
+    }
 }
 .cart__wrapper_div::-webkit-scrollbar {
     width: 0 !important;

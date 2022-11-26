@@ -51,27 +51,26 @@ const AllFoods = () => {
         <Helmet title="Food">
             <div className="allFood__wrapper">
                 <CommonSection title="All Foods"></CommonSection>
-
-                <div className="container">
-                    <section className="allFood__widget">
-                        <div className="allFood__widget-search">
-                            <input
-                                type="text"
-                                value={inputWidget}
-                                placeholder="I'm looking for..."
-                                onChange={(e) => setInputWidget(e.target.value)}
-                            />
-                            <button>
-                                <i className="ri-search-line"></i>
-                            </button>
-                        </div>
-                        <div className="allFood__widget-sort">
-                            <select name="" id="">
-                                <option value="high-price">High Price</option>
-                                <option value="low-price">Low Price</option>
-                            </select>
-                        </div>
-                    </section>
+                <div className="allFood__widget">
+                    <div className="allFood__widget-search">
+                        <input
+                            type="text"
+                            value={inputWidget}
+                            placeholder="I'm looking for..."
+                            onChange={(e) => setInputWidget(e.target.value)}
+                        />
+                        <button>
+                            <i className="ri-search-line"></i>
+                        </button>
+                    </div>
+                    <div className="allFood__widget-sort">
+                        <select name="" id="">
+                            <option value="high-price">High Price</option>
+                            <option value="low-price">Low Price</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
                     <section className="foods">
                         <div className="products">
                             {inputWidget

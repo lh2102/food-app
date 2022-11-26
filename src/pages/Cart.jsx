@@ -9,6 +9,9 @@ const Cart = () => {
     const cartData = useSelector((state) => state.cart.cartItems);
     const totalMount = useSelector(state => state.cart.totalMount);
 
+    useEffect(() => {
+        window.scrollTo(0,0)        
+    });
 
     return (
         <Helmet title="Cart">
