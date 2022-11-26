@@ -1,0 +1,15 @@
+@import './variables';
+@import './mixin';
+@import './base';
+
+//components
+@import './components/header';
+@import './components/commonSection';
+@import './pages/allFood';
+@import './pages/foodDetails';
+@import './pages/cart';
+@import './pages/home';
+@import './components/category';
+@import './components/footer';
+@import './components/productCart';
+@import './components/testimonialSlider';

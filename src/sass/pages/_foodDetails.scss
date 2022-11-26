@@ -1,0 +1,142 @@
+.foodDetails {
+     padding: 100px 0;
+     background-color: #fff;
+     @include tablet {
+          padding-bottom: unset;
+     }
+     @include mobile {
+          padding-top: 60px;
+     }
+     &__wrapper {
+          margin-top: 30px;
+          @include flex(flex-start, flex-start);
+          width: 100%;
+          gap: 10px;
+     }
+     &__img {
+          @include flex(flex-start, flex-start);
+          width: 65%;
+          flex-wrap: wrap;
+          @include tablet {
+               width: 80%;
+          }
+     }
+     &__list {
+          width: 20%;
+          @include flex(center, center);
+          flex-direction: column;
+          gap: 20px;
+          padding: 20px;
+          &-item {
+               padding: 5px;
+          }
+          &-item.active {
+               box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+                    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+          }
+     }
+     &__main {
+          flex-grow: 1;
+          // padding-top: 100%;
+          position: relative;
+
+          img {
+               width: 80%;
+               position: absolute;
+               top: -20px;
+               left: 50%;
+               // height: 100%;
+               transform: translateX(-55%);
+          }
+     }
+     &__info {
+          flex-grow: 1;
+          padding-top: 50px;
+          @include tablet {
+               padding-top: unset;
+          }
+          &-title {
+               font-size: 2.5rem;
+               font-weight: 700;
+          }
+          &-price {
+               @include flex(center, flex-start);
+               margin-top: 20px;
+               color: $color-primary;
+               margin-right: 10px;
+               span {
+                    padding-left: 10px;
+                    font-size: 2rem;
+                    font-weight: 600;
+               }
+          }
+          &-category {
+               margin-top: 10px;
+               font-size: 1rem;
+               p {
+                    display: inline-block;
+                    padding-right: 10px;
+               }
+               span {
+                    padding: 6px 18px;
+                    border-radius: 5px;
+                    background-color: $color-second;
+                    font-weight: 600;
+               }
+          }
+          &-btn {
+               position: relative;
+               overflow: hidden;
+               margin-top: 10px;
+               font-size: 1.4rem;
+               font-weight: 600;
+               padding: 10px 30px;
+
+               i {
+                    @include flex(center, center);
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transform: translateX(-100%);
+               }
+
+               &:hover i {
+                    transform: translateX(100%);
+               }
+               &:hover div {
+                    transform: translateX(100%);
+               }
+          }
+     }
+     &__desc {
+          margin-top: 150px;
+               padding: 0 40px;
+
+          h2 {
+               font-size: 3rem;
+               margin-bottom: 40px;
+          }
+          p {
+               display: block;
+          }
+          span {
+               display: block;
+          }
+     }
+}
+.related__product{
+     margin-top: 150px;
+     @include tablet {
+          margin-top: 100px;
+     }
+
+     h1{
+          text-align: center;
+          font-weight: 700;
+     }
+     .products{
+          margin-top: 50px;
+     }
+}

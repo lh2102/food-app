@@ -1,0 +1,89 @@
+.footer {
+    margin-top: 100px;
+    padding: 50px 0 0 0;
+    background-color: #fde4e4;
+    @include mobile {
+        font-size: 0.6rem;
+    }
+    &__logo{
+        padding-bottom: 20px;
+    }
+}
+
+.footer__logo img {
+    width: 30%;
+    margin-bottom: 5px;
+}
+.footer__logo h5 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.footer__logo p {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #333;
+    width: 250px;
+    @include mobile {
+     display: none;
+    }
+}
+.delivery__time-list {
+    background-color: transparent !important;
+}
+.delivery__time-item {
+    background: transparent !important;
+    color: #212245;
+}
+.delivery__time-item span {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #212245;
+    background: transparent;
+}
+.footer__title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #212245;
+}
+.newsletter {
+    margin-top: 20px;
+}
+.newsletter input {
+    width: 100%;
+    height: 45px;
+    padding: 0 10px;
+    background: transparent;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #212245;
+}
+.newsletter input:focus {
+    outline: none;
+}
+.newsletter input::placeholder {
+    color: #212245;
+}
+.newsletter span {
+    float: right;
+    font-size: 3rem;
+    color: #212245;
+}
+.newsletter > span > i {
+    cursor: pointer;
+}
+.row > div:nth-child(2) {
+    padding-left: 30px;
+}
+@media only screen and (max-width: 768px) {
+    .row > div:nth-child(2) {
+        padding-left: calc(var(--bs-gutter-x) * 0.5);;
+    }
+}
+.footer__end {
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    padding: 8px 0;
+    margin-top: 40px !important;
+    background-color: #212245;
+}

@@ -1,0 +1,50 @@
+.allFood__wrapper {
+     margin-top: 100px;
+}
+.allFood__widget {
+     padding: 50px;
+     @include flex(center, space-between);
+     &-search {
+          @include flex(center, center);
+
+          input {
+               height: 30px;
+               border: 1px solid $color-second;
+               border-right: none;
+               padding: 0 20px;
+               line-height: 10px;
+               font-size: 14px;
+          }
+          input:focus {
+               border-color: $color-primary;
+          }
+          button {
+               height: 30px;
+               padding: 2px 10px;
+               color: $white;
+               font-size: 1rem;
+               background-color: $color-primary;
+          }
+     }
+     &-sort {
+          select {
+               width: 200px;
+               outline: none;
+               border: 1px solid $color-second;
+               padding: 3px 20px;
+               height: 100%;
+               line-height: 10px;
+               font-size: 15px;
+          }
+          select:focus{ 
+               border-color: $color-primary;
+          }
+     }
+}
+.foods{
+     padding: 00px 0;
+}
+.paginationBtn{
+     // @include flex(center, center);
+
+}

@@ -1,0 +1,156 @@
+.hero__content {
+    padding-top: 60px;
+}
+.hero__content p {
+    font-size: 1rem;
+    line-height: 30px;
+    color: #777;
+}
+.hero__content h1 {
+    font-family: "RocknRoll One", sans-serif;
+}
+.hero__title {
+    font-size: 2.5rem;
+    line-height: 55px;
+    margin-bottom: 1.5rem;
+}
+.hero__title span {
+    color: #df2020;
+}
+.hero__btn button {
+    outline: none;
+    border: none;
+}
+.order__btn {
+    background-color: #df2020;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 7px 22px 7px 32px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+.order__btn i {
+    font-size: 1.8rem;
+}
+.order__btn:hover {
+    background-color: #7d1111;
+}
+.order__btn:hover.order__btn i {
+    transition: transform 0.2s ease;
+    transform: translateX(50%);
+}
+.all__foods__btn {
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 5px 20px 5px 20px;
+    border: 1px solid #df2020 !important;
+    margin-top: 30px;
+    text-decoration: none;
+}
+.all__foods__btn a {
+    color: #df2020;
+}
+.all__foods__btn a:hover {
+    color: #df2020;
+}
+.hero__service {
+    color: #212245;
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    margin-top: 3rem;
+    gap: 30px;
+}
+.shiping__icon i {
+    width: 40px;
+    height: 40px;
+    font-weight: unset;
+    padding: 5px;
+    color: #fff;
+    background-color: #df2020;
+    border-radius: 50%;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .hero__service {
+        margin-top: 1rem;
+        font-weight: 500;
+        font-size: 0.7rem;
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 0;
+    }
+    .hero__content {
+        padding: unset !important;
+    }
+    .hero__content h5 {
+        font-size: 0.8rem;
+        margin-bottom: 0.3rem !important;
+    }
+    .hero__title {
+        font-size: 2.1rem;
+        line-height: 40px;
+        margin-bottom: 0.8rem !important;
+    }
+    .hero__content p {
+        font-size: 0.9rem;
+        line-height: 20px;
+    }
+    .footer__logo p{
+        width: 200px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .hero__content {
+        padding: unset !important;
+        text-align: center;
+    }
+    .hero__content h5 {
+        font-size: 0.8rem;
+        margin-bottom: 0.3rem !important;
+    }
+    .hero__title {
+        font-size: 1.9rem;
+        line-height: 40px;
+        margin-bottom: 0.8rem !important;
+    }
+    .hero__title span {
+        display: block;
+    }
+    .hero__service {
+        margin-top: 1rem;
+        font-weight: 500;
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 0;
+        margin-left: 20px;
+    }
+    .hero__content p {
+        display: none;
+    }
+    .order__btn {
+        padding: 2px 13px 2px 23px;
+        font-size: 1.3rem;
+    }
+    .all__foods__btn {
+        margin-top: 10px;
+        font-size: .7rem;
+    }
+    .shiping__icon i {
+        width: 25px;
+        height: 25px;
+        
+    }
+    .shiping__icon {
+        gap: 2rem !important;
+        font-size: 0.8rem !important;
+    }
+    .hero__btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

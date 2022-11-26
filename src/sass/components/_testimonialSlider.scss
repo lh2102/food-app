@@ -1,0 +1,51 @@
+.testimonial {
+     margin-top: 50px;
+     width: 100%;
+     @include mobile {
+          margin-top: unset;
+          }
+     &__wrapper {
+          @include flex(center, space-between);
+          gap: 50px;
+          @include mobile {
+               padding: 10px;
+               flex-direction: column-reverse;
+          }
+     }
+     &__item {
+          width: 50%;
+          @include mobile {
+               width: 100%;
+          }
+          &-subtitle {
+               font-size: 2rem;
+          }
+          h2 {
+               font-weight: 700;
+               span {
+                    color: $color-primary;
+               }
+          }
+          &-producer {
+               h6{
+                    font-weight: 600;
+               }
+               @include flex(flex-end, flex-start);
+               img {
+                    width: 20%;
+                    margin-right: 10px;
+                    border-radius: 5px;
+               }
+               
+          }
+     }
+     &__slider {
+          margin-top: 30px;
+     }
+     &__img {
+          width: 50%;
+          @include mobile {
+               width: 100%;
+          }
+     }
+}
