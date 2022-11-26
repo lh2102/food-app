@@ -39,10 +39,10 @@ const FoodDetails = (props) => {
     };
 
     return (
-        <Helmet title="">
+        <Helmet title={`${foodDetailData.title}`}>
             <div className="foodDetails">
                 <CommonSection title={`${foodDetailData.title}`}></CommonSection>
-                <div className="container">
+                <div>
                     <div className="foodDetails__wrapper">
                         <div className="foodDetails__img">
                             <div className="foodDetails__list">
